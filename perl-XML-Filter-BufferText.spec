@@ -8,7 +8,7 @@ Summary:	XML::Filter::BufferText Perl module - to guarantee characters in one ev
 Summary(pl):	Modu³ Perla XML::Filter::BufferText - gwarantuj±cy znaki w jednym zdarzeniu
 Name:		perl-XML-Filter-BufferText
 Version:	1.00
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
