@@ -20,7 +20,7 @@ BuildRequires:	perl-Test-Simple >= 0.40
 BuildRequires:	perl-XML-SAX >= 0.04
 BuildRequires:	perl(XML::SAX::Base) >= 1.03
 %endif
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-XML-SAX >= 0.04
 Requires:	perl(XML::SAX::Base) >= 1.03
