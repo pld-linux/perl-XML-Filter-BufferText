@@ -16,7 +16,7 @@ BuildRequires:	perl >= 5.6
 %{!?_without_tests:BuildRequires:	perl-Test-Simple >= 0.40}
 %{!?_without_tests:BuildRequires:	perl-XML-SAX >= 0.04}
 %{!?_without_tests:BuildRequires:	perl(XML::SAX::Base) >= 1.03}
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 Requires:	perl-XML-SAX >= 0.04
 Requires:	perl(XML::SAX::Base) >= 1.03
 BuildArch:	noarch
