@@ -10,7 +10,8 @@ Summary(pl):	Modu³ Perla XML::Filter::BufferText - gwarancja przes³ania znaków w
 Name:		perl-XML-Filter-BufferText
 Version:	1.01
 Release:	1
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2992c0387632583b966ab9c965b25512
