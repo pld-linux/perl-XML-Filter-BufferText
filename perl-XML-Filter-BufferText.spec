@@ -32,9 +32,9 @@ putting all characters into a single event.
 
 %description -l pl
 To jest bardzo prosty filtr. Jednym z czêstych zmartwieñ (i b³êdów
-programistów) jest to, ¿e parsery XML nie musz± dostarczaæ zdarzeñ
-znakowych w jednym kawa³ku. Mog±, ale nie s± do tego zmuszone, i
-przewa¿nie tego nie robi±. Ten filtr wykonuje trywialne, ale czêsto
+programistów) jest to, ¿e analizatory XML-a nie musz± dostarczaæ
+zdarzeñ znakowych w jednym kawa³ku. Mog±, ale nie s± do tego zmuszone,
+i przewa¿nie tego nie robi±. Ten filtr wykonuje trywialne, ale czêsto
 wykonywane zadanie umieszczania wszystkich znaków w jednym zdarzeniu.
 
 %prep
