@@ -11,7 +11,7 @@ Version:	1.00
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 %{!?_without_tests:BuildRequires:	perl-Test-Simple >= 0.40}
 %{!?_without_tests:BuildRequires:	perl-XML-SAX >= 0.04}
