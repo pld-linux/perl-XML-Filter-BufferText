@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	XML
 %define		pnam	Filter-BufferText
@@ -13,9 +14,11 @@ License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2992c0387632583b966ab9c965b25512
-%{!?_without_tests:BuildRequires:	perl-Test-Simple >= 0.40}
-%{!?_without_tests:BuildRequires:	perl-XML-SAX >= 0.04}
-%{!?_without_tests:BuildRequires:	perl(XML::SAX::Base) >= 1.03}
+%if %{with tests}
+BuildRequires:	perl-Test-Simple >= 0.40
+BuildRequires:	perl-XML-SAX >= 0.04
+BuildRequires:	perl(XML::SAX::Base) >= 1.03
+%endif
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-XML-SAX >= 0.04
@@ -45,7 +48,7 @@ wykonywane zadanie umieszczania wszystkich znaków w jednym zdarzeniu.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
