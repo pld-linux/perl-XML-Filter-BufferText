@@ -12,7 +12,7 @@ Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	perl >= 5.6
+BuildRequires:	perl-devel >= 5.6
 %{!?_without_tests:BuildRequires:	perl-Test-Simple >= 0.40}
 %{!?_without_tests:BuildRequires:	perl-XML-SAX >= 0.04}
 %{!?_without_tests:BuildRequires:	perl(XML::SAX::Base) >= 1.03}
