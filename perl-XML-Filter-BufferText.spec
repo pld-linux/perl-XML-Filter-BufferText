@@ -5,7 +5,7 @@
 %define		pdir	XML
 %define		pnam	Filter-BufferText
 Summary:	XML::Filter::BufferText Perl module - to guarantee characters in one event
-Summary(pl):	Modu³ Perla XML::Filter::BufferText - gwarantuj±cy znaki w jednym zdarzeniu
+Summary(pl):	Modu³ Perla XML::Filter::BufferText - gwarancja przes³ania znaków w jednym zdarzeniu
 Name:		perl-XML-Filter-BufferText
 Version:	1.01
 Release:	1
