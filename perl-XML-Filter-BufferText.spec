@@ -7,16 +7,16 @@
 Summary:	XML::Filter::BufferText Perl module - to guarantee characters in one event
 Summary(pl):	Modu³ Perla XML::Filter::BufferText - gwarantuj±cy znaki w jednym zdarzeniu
 Name:		perl-XML-Filter-BufferText
-Version:	1.00
-Release:	2
+Version:	1.01
+Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	54fa66493135df54927c9843549f6c6d
-BuildRequires:	perl-devel >= 5.6
+# Source0-md5:	2992c0387632583b966ab9c965b25512
 %{!?_without_tests:BuildRequires:	perl-Test-Simple >= 0.40}
 %{!?_without_tests:BuildRequires:	perl-XML-SAX >= 0.04}
 %{!?_without_tests:BuildRequires:	perl(XML::SAX::Base) >= 1.03}
+BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-XML-SAX >= 0.04
 Requires:	perl(XML::SAX::Base) >= 1.03
