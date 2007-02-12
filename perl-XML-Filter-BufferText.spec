@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	Filter-BufferText
 Summary:	XML::Filter::BufferText Perl module - to guarantee characters in one event
-Summary(pl):	Modu³ Perla XML::Filter::BufferText - gwarancja przes³ania znaków w jednym zdarzeniu
+Summary(pl.UTF-8):   ModuÅ‚ Perla XML::Filter::BufferText - gwarancja przesÅ‚ania znakÃ³w w jednym zdarzeniu
 Name:		perl-XML-Filter-BufferText
 Version:	1.01
 Release:	1
@@ -34,12 +34,12 @@ character events in one chunk. They can, but are not forced to, and
 most don't. This filter does the trivial but oft-repeated task of
 putting all characters into a single event.
 
-%description -l pl
-To jest bardzo prosty filtr. Jednym z czêstych zmartwieñ (i b³êdów
-programistów) jest to, ¿e analizatory XML-a nie musz± dostarczaæ
-zdarzeñ znakowych w jednym kawa³ku. Mog±, ale nie s± do tego zmuszone,
-i przewa¿nie tego nie robi±. Ten filtr wykonuje trywialne, ale czêsto
-wykonywane zadanie umieszczania wszystkich znaków w jednym zdarzeniu.
+%description -l pl.UTF-8
+To jest bardzo prosty filtr. Jednym z czÄ™stych zmartwieÅ„ (i bÅ‚Ä™dÃ³w
+programistÃ³w) jest to, Å¼e analizatory XML-a nie muszÄ… dostarczaÄ‡
+zdarzeÅ„ znakowych w jednym kawaÅ‚ku. MogÄ…, ale nie sÄ… do tego zmuszone,
+i przewaÅ¼nie tego nie robiÄ…. Ten filtr wykonuje trywialne, ale czÄ™sto
+wykonywane zadanie umieszczania wszystkich znakÃ³w w jednym zdarzeniu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
