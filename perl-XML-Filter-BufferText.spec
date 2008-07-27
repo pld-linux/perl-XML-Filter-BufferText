@@ -9,7 +9,7 @@ Summary:	XML::Filter::BufferText Perl module - to guarantee characters in one ev
 Summary(pl.UTF-8):	Moduł Perla XML::Filter::BufferText - gwarancja przesłania znaków w jednym zdarzeniu
 Name:		perl-XML-Filter-BufferText
 Version:	1.01
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
