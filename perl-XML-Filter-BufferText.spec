@@ -13,8 +13,9 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2992c0387632583b966ab9c965b25512
+URL:		http://search.cpan.org/dist/XML-Filter-BufferText/
 %if %{with tests}
 BuildRequires:	perl-Test-Simple >= 0.40
 BuildRequires:	perl-XML-SAX >= 0.04
@@ -64,4 +65,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/XML/Filter/BufferText.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/XML::Filter::BufferText.3pm*
