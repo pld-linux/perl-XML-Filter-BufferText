@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	XML
 %define		pnam	Filter-BufferText
 Summary:	XML::Filter::BufferText Perl module - to guarantee characters in one event
