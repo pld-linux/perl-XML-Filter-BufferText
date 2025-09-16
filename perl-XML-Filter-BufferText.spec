@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	XML
 %define		pnam	Filter-BufferText
@@ -12,18 +12,19 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2992c0387632583b966ab9c965b25512
-URL:		http://search.cpan.org/dist/XML-Filter-BufferText/
+URL:		http://metacpan.org/dist/XML-Filter-BufferText
 %if %{with tests}
 BuildRequires:	perl-Test-Simple >= 0.40
 BuildRequires:	perl-XML-SAX >= 0.04
-BuildRequires:	perl(XML::SAX::Base) >= 1.03
+BuildRequires:	perl-XML-SAX-Base >= 1.03
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 Requires:	perl-XML-SAX >= 0.04
-Requires:	perl(XML::SAX::Base) >= 1.03
+Requires:	perl-XML-SAX-Base >= 1.03
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
